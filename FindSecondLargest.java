@@ -8,7 +8,7 @@ public class FindSecondLargest {
 		int[] data = { 3, 2, 11, 4, 6, 7 };
 		int len = data.length;
 		System.out.println("Length of the given Array is : " + len);
-		Arrays.sort(data);
+		Arrays.sort(data); // Arrange the array in ascending order
 		// Display the array
 		System.out.println("Sorted Array : ");
 		for (int i = 0; i < data.length; i++) {
@@ -16,7 +16,8 @@ public class FindSecondLargest {
 		}
 		// Choose the second largest number using the appropriate index
 		System.out.println("*************");
-		System.out.println("The second largest element is : " + data[len - 2]);
+		System.out.println("The second largest element is : " + data[len - 2]); // Pick the 2nd element from the last
+																				// and print it
 
 	}
 
