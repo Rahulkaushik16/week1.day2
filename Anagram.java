@@ -17,8 +17,6 @@ public class Anagram {
 			Arrays.sort(charArray1); // sort the char array
 			Arrays.sort(charArray2);
 
-			// if sorted char arrays are same
-			// then the string is anagram
 			boolean result = Arrays.equals(charArray1, charArray2); // Check both the arrays has same value
 
 			if (result) {
