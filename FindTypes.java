@@ -13,11 +13,11 @@ public class FindTypes {
 
 		for (int i = 0; i < charArray.length; i++) { // Traverse through each character (using loop)
 			char ch = test.charAt(i);
-			if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z') { // Character.isLetter
+			if (Character.isLetter(ch)) { // Character.isLetter
 				letter++;
-			} else if (ch >= '0' && ch <= '9') { // Character.isDigit
+			} else if (Character.isDigit(ch)) { // Character.isDigit
 				num++;
-			} else if (ch == ' ') { // Character.isSpaceChar
+			} else if (Character.isSpaceChar(ch)) { // Character.isSpaceChar
 				space++;
 			} else { // else -> consider as special character
 				specialChar++;
