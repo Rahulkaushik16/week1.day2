@@ -9,13 +9,13 @@ public class ReverseEvenWords {
 		StringBuilder result = new StringBuilder();
 		for (int i = 0; i < test1.length; i++) { // Traverse through each word (using loop)
 			if (i % 2 != 0) { // find the odd index within the loop (use mod operator)
-				char[] word = test1[i].toCharArray();
-				String reverseWord = "";
-				for (int j = word.length; j > 0; j--) { // print the even position words in reverse order using another
+				char[] ch = test1[i].toCharArray();
+				String reverse = "";
+				for (int j = ch.length; j > 0; j--) { // print the even position words in reverse order using another
 														// loop (nested loop)
-					reverseWord += String.valueOf(word[j - 1]);
+					reverse += String.valueOf(ch[j - 1]);
 				}
-				result.append(reverseWord).append(" ");
+				result.append(reverse).append(" ");
 			} else {
 				result.append(test1[i]).append(" ");
 			}
